@@ -17,5 +17,8 @@ namespace Smartwyre.DeveloperTest.Entities
         }
 
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<Rebate> Rebates { get; set; }
+
     }
 }

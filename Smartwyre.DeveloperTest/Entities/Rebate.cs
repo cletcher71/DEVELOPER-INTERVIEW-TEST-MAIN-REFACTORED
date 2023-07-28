@@ -8,7 +8,7 @@ namespace Smartwyre.DeveloperTest.Entities
 
         public required string Identifier { get; set; }
 
-        public string? Incentive { get; set; }
+        public IncentiveType Incentive { get; set; }
 
         public decimal Amount { get; set; }
 

@@ -2,16 +2,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Smartwyre.DeveloperTest.Entities
 {
-    public class SupportedIncentiveType
+    public enum SupportedIncentiveType
     {
-        public int Id { get; set; }
-
-        public required string Identifier { get; set; }
-
-        public string? Incentive { get; set; }
-
-        public decimal Amount { get; set; }
-
-        public decimal Percentage { get; set; }
+        FixedRateRebate = 1 << 0,
+        AmountPerUom = 1 << 1,
+        FixedCashAmount = 1 << 2,
     }
 }

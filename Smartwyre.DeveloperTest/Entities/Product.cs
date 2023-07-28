@@ -15,5 +15,7 @@ namespace Smartwyre.DeveloperTest.Entities
 
         public String? Uom { get; set; }
 
+        public SupportedIncentiveType SupportedIncentives { get; set; }
+
     }
 }
